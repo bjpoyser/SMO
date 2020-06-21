@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: bc7b5f1ee8ffcef49a9bda333c1b503e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7728759801931393604
+    second: Sky_0
+  - first:
+      213: -6731477201394321589
+    second: Sky_1
+  - first:
+      213: -4230753441139990038
+    second: Sky_2
+  - first:
+      213: -4701219517303659125
+    second: Sky_3
+  - first:
+      213: 8660705131803739461
+    second: Sky_4
+  - first:
+      213: -4132690169284483654
+    second: Sky_5
+  - first:
+      213: -4708893057168045889
+    second: Sky_6
+  - first:
+      213: 1573348698213113794
+    second: Sky_7
+  - first:
+      213: 4298853571359742533
+    second: Sky_8
+  - first:
+      213: 1226651266129458251
+    second: Sky_9
+  - first:
+      213: -600244253396834414
+    second: Sky_10
+  - first:
+      213: 6609567787565705934
+    second: Skyes_11
+  - first:
+      213: 8270148438225750774
+    second: Skyes_12
+  - first:
+      213: -6436796372657139470
+    second: Skyes_13
+  - first:
+      213: -3803811860794028827
+    second: Skyes_14
+  - first:
+      213: 307775524142295847
+    second: Skyes_15
+  - first:
+      213: -2621286934080473970
+    second: Skyes_16
+  - first:
+      213: -1915914847927295305
+    second: Skyes_17
+  - first:
+      213: 6742286402614462545
+    second: Skyes_18
+  - first:
+      213: 9078104036000974841
+    second: Skyes_19
+  - first:
+      213: 1030745932757521217
+    second: Skyes_20
+  - first:
+      213: 6372141309292140448
+    second: Skyes_21
+  - first:
+      213: 5661986810539681906
+    second: Skyes_22
+  - first:
+      213: -5274104397766930176
+    second: Skyes_23
+  - first:
+      213: -802813043291091102
+    second: Skyes_24
+  - first:
+      213: -266560157757120414
+    second: Skyes_25
+  - first:
+      213: -5509494807859205877
+    second: Skyes_26
+  - first:
+      213: 5914527719254917338
+    second: Sky_0
+  - first:
+      213: 2402477194121884446
+    second: Sky_1
+  - first:
+      213: 9215725426457295998
+    second: Sky_2
+  - first:
+      213: -635835988447588294
+    second: Sky_3
+  - first:
+      213: -2642508930789792264
+    second: Sky_4
+  - first:
+      213: -109467055402352900
+    second: Sky_5
+  - first:
+      213: -8177771878980567770
+    second: Sky_6
+  - first:
+      213: 613537409624793621
+    second: Sky_7
+  - first:
+      213: 6344329014846028095
+    second: Sky_8
+  - first:
+      213: 4497064181998355006
+    second: Sky_9
+  - first:
+      213: -7980098012480549438
+    second: Sky_10
+  - first:
+      213: 5914527719254917338
+    second: Skyes_0
+  - first:
+      213: 2402477194121884446
+    second: Skyes_1
+  - first:
+      213: 9215725426457295998
+    second: Skyes_2
+  - first:
+      213: -635835988447588294
+    second: Skyes_3
+  - first:
+      213: -2642508930789792264
+    second: Skyes_4
+  - first:
+      213: -109467055402352900
+    second: Skyes_5
+  - first:
+      213: -8177771878980567770
+    second: Skyes_6
+  - first:
+      213: 613537409624793621
+    second: Skyes_7
+  - first:
+      213: 6344329014846028095
+    second: Skyes_8
+  - first:
+      213: 4497064181998355006
+    second: Skyes_9
+  - first:
+      213: -7980098012480549438
+    second: Skyes_10
+  - first:
+      213: -8130776206791237211
+    second: Sky_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sky_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1380
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a60745712124b60800000000000000
+      internalID: 7728759801931393604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1380
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b473045762df492a0800000000000000
+      internalID: -6731477201394321589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_2
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1380
+        width: 323
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1e69829285945c0800000000000000
+      internalID: -4230753441139990038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_3
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1380
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b856bf3d1c9e1ceb0800000000000000
+      internalID: -4701219517303659125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_4
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1380
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54580955e61013870800000000000000
+      internalID: 8660705131803739461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 704
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5ac0ddf2cb5a6c0800000000000000
+      internalID: -4132690169284483654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 701
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8023a96b6a6aeb0800000000000000
+      internalID: -4708893057168045889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_7
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 701
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfd0d81e48a5d510800000000000000
+      internalID: 1573348698213113794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_8
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 701
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a115efb8898ab30800000000000000
+      internalID: 4298853571359742533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_9
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 704
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44fde4d3d0f50110800000000000000
+      internalID: 1226651266129458251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 34
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297efc128018ba7f0800000000000000
+      internalID: -600244253396834414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sky_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 34
+        width: 320
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1a20e5e1ea92f80800000000000000
+      internalID: -8130776206791237211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
