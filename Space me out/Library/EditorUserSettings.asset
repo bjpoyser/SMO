@@ -6,13 +6,13 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     UnityRemoteCompression:
-      value: 29617121
+      value: 337f73
       flags: 0
     UnityRemoteDevice:
       value: 50550c5f530c5b585e585d7011200b4612124d7f2f2b2361297a1862b7e2616eb0b064ebb06f3c3a
       flags: 0
     UnityRemoteResolution:
-      value: 275e4308165c135e
+      value: 2d5e460b0459
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

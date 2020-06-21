@@ -8,8 +8,8 @@ public class Parallax : MonoBehaviour
         float y = Input.acceleration.y;
 
         GetComponent<RectTransform>().position = new Vector2(
-            (x / Screen.width) * 7000,
-            (y / Screen.height) * 7000
+            (x * 10/ Screen.width) * 10000,
+            (y * 10/ Screen.height) * 10000
         );
     }
 }
