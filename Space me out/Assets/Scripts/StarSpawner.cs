@@ -66,38 +66,29 @@ public class StarSpawner : MonoBehaviour
         switch (skyesEngineScript.obstacleIndex)
         {
             case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
                 _isStarTime = false;
                 break;
             case 6:
-            case 7:
-            case 8:
                 _isStarTime = true;
                 _spawnTime = 15f;
                 break;
             case 9:
-            case 10:
                 _spawnTime = 10f;
                 break;
-            case 11:
+            case 13:
                 _spawnTime = 20f;
                 break;
-            case 12:
-            case 13:
             case 14:
-                _spawnTime = 8f;
+                _spawnTime = 1f;
                 break;
             case 15:
-                _spawnTime = 2f;
-                break;
-            case 16:
                 _spawnTime = 15f;
                 break;
-            case 17:
-                _spawnTime = 8f;
+            case 22:
+                _spawnTime = 1f;
+                break;
+            case 23:
+                _spawnTime = 20f;
                 break;
         }
     }

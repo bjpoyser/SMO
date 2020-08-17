@@ -66,10 +66,16 @@ public class SkyesEngine : MonoBehaviour
         }
     }
 
+    private void DestroySky()
+    {
+        Destroy(prevSky.gameObject);
+        CreateSky();
+    }
+
     private void CreateSky()
     {
         _skyCount++;
-        Skyaltitude();
+        SkyAltitude();
         GameObject sky = Instantiate(skyesContainerArray[minAltitude]);
         sky.SetActive(true);
         sky.name = "Sky_" + _skyCount;
@@ -77,86 +83,10 @@ public class SkyesEngine : MonoBehaviour
         PlaceSky();
     }
 
-    private void Skyaltitude()
+    private void SkyAltitude()
     {
-        if (altitude < 1)
-        {
-            minAltitude = 1;
-            obstacleIndex = 1;
-        }
-        else if (altitude < 1000)
-        {
-            minAltitude = 2;
-            obstacleIndex = 2;
-        }
-        else if (altitude < 1200)
-        {
-            minAltitude = 3;
-            obstacleIndex = 3;
-        }
-        else if (altitude < 2000)
-        {
-            minAltitude = 4;
-            obstacleIndex = 4;
-        }
-        else if (altitude < 2200)
-        {
-            minAltitude = 5;
-            obstacleIndex = 5;
-        }
-        else if (altitude < 3000)
-        {
-            minAltitude = 6;
-            obstacleIndex = 6;
-        }
-        else if (altitude < 3200)
-        {
-            minAltitude = 7;
-            obstacleIndex = 7;
-        }
-        else if (altitude < 4000)
-        {
-            minAltitude = Random.Range(8, 10);
-            obstacleIndex = Random.Range(8, 10);
-        }
-        else if (altitude < 5000)
-        {
-            obstacleIndex = 10;
-        }
-        else if (altitude < 7800)
-        {
-            obstacleIndex = 11;
-        }
-        else if (altitude < 10000)
-        {
-            obstacleIndex = 12;
-        }
-        else if (altitude < 12000)
-        {
-            obstacleIndex = 13;
-        }
-        else if (altitude < 13000)
-        {
-            obstacleIndex = 14;
-        }
-        else if (altitude < 15000)
-        {
-            obstacleIndex = 15;
-        }
-        else if (altitude < 16000)
-        {
-            obstacleIndex = 16;
-        }
-        else if (altitude < 28000)
-        {
-            obstacleIndex = 17;
-        }
-
-        if (altitude > 30000 && altitude < 30200)
-        {
-            PlayerPrefs.SetInt(catNamePref, 1);
-            gameAni.SetTrigger("unlocked");
-        }
+        SkySelector();
+        ObstacleSelector();
     }
 
     private void PlaceSky()
@@ -172,10 +102,93 @@ public class SkyesEngine : MonoBehaviour
         limitScreenSize = new Vector3(0, camComp.ScreenToWorldPoint(new Vector3(0, 0, 0)).y - 8f, 0);
     }
 
-    private void DestroySky()
+    private void ObstacleSelector()
     {
-        Destroy(prevSky.gameObject);
-        CreateSky();
+        if (altitude < 1)
+            obstacleIndex = 1;
+        if (altitude > 1000)
+            obstacleIndex = 2;
+        if (altitude > 3000)
+            obstacleIndex = 3;
+        if (altitude > 5000)
+            obstacleIndex = 4;
+        if (altitude > 7000)
+            obstacleIndex = 5;
+        if (altitude > 8000)
+            obstacleIndex = 6;
+        if (altitude > 9000)
+            obstacleIndex = 7;
+        if (altitude > 10000)
+            obstacleIndex = 8;
+        if (altitude > 12000)
+            obstacleIndex = 9;
+        if (altitude > 13000)
+            obstacleIndex = 10;
+        if (altitude > 14000)
+            obstacleIndex = 11;
+        if (altitude > 16300)
+            obstacleIndex = 12;
+        if (altitude > 16500)
+            obstacleIndex = 13;
+        if (altitude > 17000)
+            obstacleIndex = 14;
+        if (altitude > 18000)
+            obstacleIndex = 15;
+        if (altitude > 20000)
+            obstacleIndex = 16;
+        if (altitude > 22000)
+            obstacleIndex = 17;
+        if (altitude > 23000)
+            obstacleIndex = 18;
+        if (altitude > 25000)
+            obstacleIndex = 19;
+        if (altitude > 27000)
+            obstacleIndex = 20;
+        if (altitude > 29000)
+            obstacleIndex = 21;
+        if (altitude > 30000)
+            obstacleIndex = 22;
+        if (altitude > 31000)
+            obstacleIndex = 23;
     }
 
+    private void SkySelector()
+    {
+        //Sky 1: constant
+        if (altitude < 1)
+            minAltitude = 0;
+
+        //Sky 2: transition
+        if (altitude > 2500)
+            minAltitude = 1;
+
+        //Sky 3: constant
+        if (altitude > 2800)
+            minAltitude = 2;
+
+        //Sky 4: transition
+        if (altitude > 4900)
+            minAltitude = 3;
+
+        //Sky 5: constant
+        if (altitude > 5000)
+            minAltitude = 4;
+
+        //Sky 6: transition
+        if (altitude > 7000)
+            minAltitude = 5;
+
+        //Sky 7: constant
+        if (altitude > 7300)
+            minAltitude = 6;
+
+        //Sky 8: transition
+        if (altitude > 9000)
+            minAltitude = 7;
+
+        //Sky 9: constant
+        if (altitude > 9300)
+            minAltitude = Random.Range(8, 10);
+
+    }
 }

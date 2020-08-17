@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
         skyesEngineScript = gameControllerGO.GetComponent<SkyesEngine>();
         _obstacleCount = 0;
         actualTime = 0;
-        planetIndex = 4;
+        planetIndex = 6;
     }
 
     void Update()
@@ -76,90 +76,125 @@ public class Spawner : MonoBehaviour
         }
     }
 
+
+    /*
+     0 = aircraft
+     1 = helicopter
+     2 = heat ballon
+     3 = plane
+     4 = meteorite
+     5 = asteroid
+    */
+
     private void SetObstacleSelector()
     {
         switch (skyesEngineScript.obstacleIndex)
         {
             case 1:
-            case 2:
-                _speed = 7;
+                _speed = 5;
                 spawnTime = 6;
                 _minSpawnSelection = 0;
                 _maxSpawnSelection = 2;
+                //Only aircraft
                 _minObstacleSelection = 0;
                 _maxObstacleSelection = 1;
                 break;
-            case 3:
-            case 4:
-                _speed = 8;
+            case 2:
+                //aircraft and helicopter
+                _speed = 6;
                 spawnTime = 4;
-                _minObstacleSelection = 1;
                 _maxObstacleSelection = 2;
+                break;
+            case 3:
+                _speed = 7.5f;
+                spawnTime = 2;
+                //helicopter and heat ballon
+                _minObstacleSelection = 1;
+                _maxObstacleSelection = 3;
+                break;
+            case 4:
+                _speed = 10;
+                spawnTime = 4;
+                //Only Plane
+                _minObstacleSelection = 3;
+                _maxObstacleSelection = 4;
                 break;
             case 5:
             case 6:
                 _speed = 9;
-                spawnTime = 4;
+                spawnTime = 3;
                 _maxSpawnSelection = 4;
-                _minObstacleSelection = 2;
-                _maxObstacleSelection = 3;
+                //Only meteorite
+                _minObstacleSelection = 4;
+                _maxObstacleSelection = 5;
                 break;
             case 7:
                 spawnTime = 2;
-                _maxObstacleSelection = 4;
+                //meteorite and asteroid
+                _maxObstacleSelection = 6;
                 break;
             case 8:
                 _speed = 10;
-                _maxObstacleSelection = 4;
                 break;
             case 9:
                 _speed = 11;
                 spawnTime = 1f;
-                _maxObstacleSelection = 4;
                 break;
             case 10:
-                _speed = 8;
+                _speed = 9.5f;
                 spawnTime = 0.8f;
                 break;
             case 11:
-                spawnTime = 4;
+                spawnTime = 3f;
+                _speed = 7f;
                 _minSpawnSelection = 2;
                 _maxSpawnSelection = 4;
+                //Planets
                 _minObstacleSelection = planetIndex;
                 _maxObstacleSelection = planetIndex++;
                 break;
             case 12:
-                _speed = 12;
-                spawnTime = 1f;
-                _minSpawnSelection = 0;
-                _maxSpawnSelection = 4;
-                _minObstacleSelection = 2;
-                _maxObstacleSelection = 4;
+                _minObstacleSelection = 4;
+                _maxObstacleSelection = 6;
                 break;
             case 13:
-                spawnTime = 1.5f;
-                _minSpawnSelection = 2;
+                spawnTime = 0.8f;
+                _speed = 10f;
+                _minSpawnSelection = 0;
                 _maxSpawnSelection = 4;
+                //meteorite and asteroid
+                _minObstacleSelection = 4;
+                _maxObstacleSelection = 6;
                 break;
             case 14:
-                spawnTime = 0.8f;
-                _minSpawnSelection = 0;
-                _maxSpawnSelection = 4;
+                spawnTime = 8f;
                 break;
             case 15:
-                actualTime = 0;
-                break;
-            case 16:
                 _speed = 12;
-                spawnTime = 1f;
-                _minSpawnSelection = 0;
-                _maxSpawnSelection = 4;
-                _minObstacleSelection = 2;
-                _maxObstacleSelection = 4;
+                spawnTime = 0.8f;
                 break;
-            case 17:
+            case 18:
+                _speed = 10;
+                spawnTime = 1.2f;
+                break;
+            case 19:
+                _speed = 11f;
+                spawnTime = 1f;
+                break;
+            case 20:
+                _speed = 8f;
+                spawnTime = 1f;
+                break;
+            case 21:
                 _speed = 13f;
                 spawnTime = 0.8f;
+                break;
+            case 22:
+                spawnTime = 8f;
+                break;
+            case 23:
+                _speed = 14f;
+                spawnTime = 0.7f;
                 break;
         }
     }
