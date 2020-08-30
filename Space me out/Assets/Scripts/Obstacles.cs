@@ -16,6 +16,7 @@ public class Obstacles : MonoBehaviour
 
     public GameObject rocketGO;
     public SpriteRenderer rocketSprite;
+    public SpriteRenderer fireA, fireB, fireC;
 
     public GameObject cameraGO;
     public CameraShake cameraShakeScript;
@@ -25,6 +26,8 @@ public class Obstacles : MonoBehaviour
     public float speed;
 
     public Transform target;
+
+    public AudioSource explosion;
 
     private void Start()
     {
@@ -38,6 +41,10 @@ public class Obstacles : MonoBehaviour
 
         rocketGO = GameObject.Find("Rocket");
         rocketSprite = rocketGO.GetComponent<SpriteRenderer>();
+
+        fireA = GameObject.Find("FireA").GetComponent<SpriteRenderer>();
+        fireB = GameObject.Find("FireB").GetComponent<SpriteRenderer>();
+        fireC = GameObject.Find("FireC").GetComponent<SpriteRenderer>();
 
         cameraShakeScript = gameControllerGO.GetComponent<CameraShake>();
 
@@ -63,6 +70,7 @@ public class Obstacles : MonoBehaviour
         if (collision.gameObject.tag == "Rocket")
         {
             StartCoroutine(BreakRocket());
+            explosion.Play();
         }
         if (collision.gameObject.tag == "Destroyer")
         {
@@ -83,6 +91,9 @@ public class Obstacles : MonoBehaviour
         Destroy(rocketGO.transform.GetComponent<BoxCollider2D>());
 
         rocketSprite.enabled = false;
+        if (fireA != null) fireA.enabled = false;
+        if (fireB != null) fireB.enabled = false;
+        if (fireC != null) fireC.enabled = false;
         skyesEngineScript.isGameOn = false;
 
         if (isVibrationOn)

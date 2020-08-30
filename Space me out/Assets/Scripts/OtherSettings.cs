@@ -49,6 +49,8 @@ public class OtherSettings : MonoBehaviour
 
     public Sprite[] flagsArray;
 
+    public AudioSource nextAudio, backAudio, selectAudio, optionAudio;
+
     private void Start()
     {
         InitLanguage();
@@ -83,7 +85,6 @@ public class OtherSettings : MonoBehaviour
         }
 
         languageDD.AddOptions(langItems);
-
         languageDD.value = PlayerPrefs.GetInt(LanguagePref)-1;
     }
 
@@ -215,5 +216,25 @@ public class OtherSettings : MonoBehaviour
     {
         string state = isVibrationOn.isOn.ToString();
         PlayerPrefs.SetString(vibrationPref, state);
+    }
+
+    public void PlayNextAudio()
+    {
+        nextAudio.Play();
+    }
+
+    public void PlaySelectAudio()
+    {
+        selectAudio.Play();
+    }
+
+    public void PlayBackAudio()
+    {
+        backAudio.Play();
+    }
+
+    public void PlayOptionAudio()
+    {
+        optionAudio.Play();
     }
 }

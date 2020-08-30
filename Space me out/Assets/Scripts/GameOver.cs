@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     public SkyesEngine skyesEngineScript;
     public Text altitudeTxt, numStarsTxt;
     public ShopSystem shopSysScript;
+    public AudioSource mainMusic;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class GameOver : MonoBehaviour
 
     public void ShowGameOver()
     {
+        mainMusic.Stop();
         gameOverPanel.SetActive(true);
         altitudeTxt.text =  $"{altitudeString}\n{skyesEngineScript.altitudeText.text}" ;
         numStarsTxt.text = $"{shopSysScript.earnedStars}";

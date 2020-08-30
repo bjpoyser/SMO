@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336023540310247011, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 759195538346930952, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.16
+      objectReference: {fileID: 0}
     - target: {fileID: 1248750167844003320, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
         type: 3}
       propertyPath: m_Name
@@ -108,10 +118,45 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8412d356709fff34580589e12982e277, type: 2}
+    - target: {fileID: 2538044010071260872, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4757713673248854838, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868695736891436125, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868695736891436125, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.21556243
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868695736891436125, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200230364073096382, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7365087858845921595, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
         type: 3}
       propertyPath: price
       value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928448213308842081, guid: 72ebfc528cb5fd04ab676f2d4b347da4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.16
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7976844218101941838, guid: 72ebfc528cb5fd04ab676f2d4b347da4, type: 3}

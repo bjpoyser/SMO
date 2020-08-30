@@ -11,6 +11,8 @@ public class Star : MonoBehaviour
     public Transform target;
     public float _speed;
 
+    private AudioSource _pickedSound;
+
     private void Start()
     {
         gameControllerGO = GameObject.Find("GameController");
@@ -29,8 +31,10 @@ public class Star : MonoBehaviour
     {
         if(collision.tag == "Rocket")
         {
+            _pickedSound = collision.GetComponentInParent<AudioSource>();
             shopSysScript.AddCoins(value);
             shopSysScript.DisplayCoins();
+            _pickedSound.Play();
             Destroy(gameObject);
         }
         if (collision.tag == "Destroyer")

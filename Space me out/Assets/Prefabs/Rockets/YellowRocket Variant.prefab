@@ -33,10 +33,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1189408761436907489, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231311656675711114, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37182242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231311656675711114, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231311656675711114, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231311656675711114, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1442869
+      objectReference: {fileID: 0}
+    - target: {fileID: 3560993573378031721, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3796930263303767532, guid: cadc0cac1c7381549800dd562e14c095,
         type: 3}
       propertyPath: price
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4876175084943105688, guid: cadc0cac1c7381549800dd562e14c095,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4887276678773293126, guid: cadc0cac1c7381549800dd562e14c095,
         type: 3}
