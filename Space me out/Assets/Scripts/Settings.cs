@@ -7,7 +7,7 @@ public class Settings : MonoBehaviour
     private const string firstTimePref = "FirstTime";
     private const string starsPref = "stars";
 
-    public GameObject pausePanel, settingsPanel, controlPanel, garagePanel;
+    public GameObject pausePanel, settingsPanel, controlPanel, audioPanel, garagePanel;
 
     public ControlSettings controlScript;
 
@@ -57,6 +57,7 @@ public class Settings : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "MainMenu")
             garagePanel.SetActive(false);
 
+        audioPanel.SetActive(false);
         controlPanel.SetActive(false);
         settingsPanel.SetActive(true);
     }
@@ -73,6 +74,18 @@ public class Settings : MonoBehaviour
         controlPanel.SetActive(true);
         
         controlScript.StartControlSettings();
+    }
+
+    public void AudioMenu()
+    {
+        if (SceneManager.GetActiveScene().name == "Game")
+            pausePanel.SetActive(false);
+
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+            garagePanel.SetActive(false);
+
+        settingsPanel.SetActive(false);
+        audioPanel.SetActive(true);
     }
 
     public void GarageMenu()

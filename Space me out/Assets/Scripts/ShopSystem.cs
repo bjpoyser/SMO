@@ -28,7 +28,6 @@ public class ShopSystem : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             starsMainMenuTxt.text = PlayerPrefs.GetInt(starsPref) + "";
-            starsInShop.text = PlayerPrefs.GetInt(starsPref) + "";
         }
     }
 

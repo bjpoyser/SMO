@@ -7,6 +7,8 @@ public class OtherSettings : MonoBehaviour
 {
     private const string LanguagePref = "language";
     private const string vibrationPref = "vibration";
+    private const string musicTxtPref = "musicTxt";
+    private const string sfxTxtPref = "sfxTxt";
 
     private const string playTxtPref = "playTxt";
     private const string garageTxtPref = "garageTxt";
@@ -14,7 +16,6 @@ public class OtherSettings : MonoBehaviour
     private const string vibrationTxtPref = "vibrationTxt";
     private const string languageTxtPref = "languageTxt";
 
-    private const string backTxtPref = "backTxt";
     private const string selectTxtPref = "selectTxt";
     private const string settingsTxtPref = "settingsTxt";
     private const string controlTxtPref = "controlsTxt";
@@ -24,17 +25,23 @@ public class OtherSettings : MonoBehaviour
     private const string altitudeTxtPref = "altitudeTxt";
     private const string playAgainTxtPref = "playAgainTxt";
 
+    const string masterVol = "MasterVol";
+    const string musicVol = "MusicVol";
+    const string sfxVol = "SFXVol";
+    const string settingsVol = "SettingsVol";
+
     public int languageIndex;
 
     public Text[] play;
     public Text[] garage;
     public Text[] exit;
 
-    public Text[] back;
     public Text[] select;
     public Text[] settings;
     public Text[] vibration;
     public Text[] language;
+    public Text[] music;
+    public Text[] sfx;
 
     public Text[] control;
     public Text[] resume;
@@ -51,12 +58,23 @@ public class OtherSettings : MonoBehaviour
 
     public AudioSource nextAudio, backAudio, selectAudio, optionAudio;
 
+    public Slider masterSlider, musicSlider, sfxSlider, settingsSlider;
+
     private void Start()
     {
+        InitAudio();
         InitLanguage();
         FillDD();
         SetToggle();
         ChangeStrings();
+    }
+
+    private void InitAudio()
+    {
+        masterSlider.value = PlayerPrefs.GetFloat(masterVol) == 0f ? 1 : PlayerPrefs.GetFloat(masterVol);
+        musicSlider.value = PlayerPrefs.GetFloat(musicVol) == 0f ? 1 : PlayerPrefs.GetFloat(musicVol);
+        sfxSlider.value = PlayerPrefs.GetFloat(sfxVol) == 0f ? 1 : PlayerPrefs.GetFloat(sfxVol);
+        settingsSlider.value = PlayerPrefs.GetFloat(settingsVol) == 0f ? 1 : PlayerPrefs.GetFloat(settingsVol);
     }
 
     private void InitLanguage()
@@ -119,12 +137,13 @@ public class OtherSettings : MonoBehaviour
             PlayerPrefs.SetString(pauseTxtPref, "PAUSE");
             PlayerPrefs.SetString(altitudeTxtPref, "ALTITUDE");
             PlayerPrefs.SetString(playAgainTxtPref, "PLAY AGAIN!");
-            PlayerPrefs.SetString(backTxtPref, "BACK");
             PlayerPrefs.SetString(selectTxtPref, "SELECT");
             PlayerPrefs.SetString(settingsTxtPref, "SETTINGS");
             PlayerPrefs.SetString(controlTxtPref, "CONTROLS");
             PlayerPrefs.SetString(vibrationTxtPref, "VIBRATION");
             PlayerPrefs.SetString(languageTxtPref, "LANGUAGE");
+            PlayerPrefs.SetString(musicTxtPref, "MUSIC");
+            PlayerPrefs.SetString(sfxTxtPref, "SFX");
         }
         if (PlayerPrefs.GetInt(LanguagePref) == 2)
         {
@@ -136,12 +155,13 @@ public class OtherSettings : MonoBehaviour
             PlayerPrefs.SetString(pauseTxtPref, "PAUSA");
             PlayerPrefs.SetString(altitudeTxtPref, "ALTURA");
             PlayerPrefs.SetString(playAgainTxtPref, "VOLVER A JUGAR!");
-            PlayerPrefs.SetString(backTxtPref, "VOLVER");
             PlayerPrefs.SetString(selectTxtPref, "SELECCIONAR");
             PlayerPrefs.SetString(settingsTxtPref, "OPCIONES");
             PlayerPrefs.SetString(controlTxtPref, "CONTROLES");
             PlayerPrefs.SetString(vibrationTxtPref, "VIBRACIÓN");
             PlayerPrefs.SetString(languageTxtPref, "IDIOMA");
+            PlayerPrefs.SetString(musicTxtPref, "MÚSICA");
+            PlayerPrefs.SetString(sfxTxtPref, "EFECTOS");
         }
         languageIndex = PlayerPrefs.GetInt(LanguagePref);
         ChangeTexts();
@@ -187,9 +207,6 @@ public class OtherSettings : MonoBehaviour
                 item.text = PlayerPrefs.GetString(playAgainTxtPref);
             }
         }
-        foreach (Text item in back){
-            item.text = PlayerPrefs.GetString(backTxtPref);
-        }
         foreach (Text item in select)
         {
             item.text = PlayerPrefs.GetString(selectTxtPref);
@@ -209,6 +226,14 @@ public class OtherSettings : MonoBehaviour
         foreach (Text item in language)
         {
             item.text = PlayerPrefs.GetString(languageTxtPref);
+        }
+        foreach (Text item in music)
+        {
+            item.text = PlayerPrefs.GetString(musicTxtPref);
+        }
+        foreach (Text item in sfx)
+        {
+            item.text = PlayerPrefs.GetString(sfxTxtPref);
         }
     }
 

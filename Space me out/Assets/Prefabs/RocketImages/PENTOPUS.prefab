@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4796926786093621702}
   - component: {fileID: -1699404847704786879}
   m_Layer: 5
-  m_Name: PinkRocket
+  m_Name: PENTOPUS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,4 +87,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464dd36d65ef55841a4a0956fef5b670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrice: 350
+  rocketPrice: 70

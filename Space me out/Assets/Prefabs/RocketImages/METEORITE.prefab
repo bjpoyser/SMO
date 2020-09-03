@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4118494853242008593}
   - component: {fileID: -4371128047358191996}
   m_Layer: 5
-  m_Name: OrangeRocket
+  m_Name: METEORITE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,4 +88,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464dd36d65ef55841a4a0956fef5b670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrice: 500
+  rocketPrice: 100

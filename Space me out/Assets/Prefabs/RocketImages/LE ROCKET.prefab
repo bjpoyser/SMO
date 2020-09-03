@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6575120183810257037}
   - component: {fileID: 180001116094728954}
   m_Layer: 5
-  m_Name: BlueRedRocket
+  m_Name: LE ROCKET
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,4 +88,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464dd36d65ef55841a4a0956fef5b670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocketPrice: 120
+  rocketPrice: 40
