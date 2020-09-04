@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - RocketProps
     - RocketSelection
     - SceneChange
+    - SetVolume
     - Settings
     - ShopSystem
     - SkyesEngine
@@ -52,6 +53,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
   sceneClasses:
@@ -111,47 +113,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12232}
+      Script: {instanceID: 12216}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12234}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12258}
     - Class: 114
       Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 12928}
+      Script: {instanceID: 12894}
     - Class: 114
-      Script: {instanceID: 12970}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13624}
+      Script: {instanceID: 12972}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13626}
     - Class: 114
-      Script: {instanceID: 14080}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 14090}
+      Script: {instanceID: 14082}
     - Class: 114
-      Script: {instanceID: 14196}
+      Script: {instanceID: 14092}
     - Class: 114
-      Script: {instanceID: 14208}
+      Script: {instanceID: 14198}
     - Class: 114
-      Script: {instanceID: 14244}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 14276}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14296}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14308}
+      Script: {instanceID: 14298}
+    - Class: 114
+      Script: {instanceID: 14310}
+    - Class: 114
+      Script: {instanceID: 14322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -173,6 +179,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -218,31 +230,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12182}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 12232}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12234}
     - Class: 114
-      Script: {instanceID: 12542}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12544}
     - Class: 114
-      Script: {instanceID: 13102}
+      Script: {instanceID: 12894}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13104}
     - Class: 114
-      Script: {instanceID: 13796}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 13866}
+      Script: {instanceID: 13798}
     - Class: 114
-      Script: {instanceID: 14196}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 14244}
+      Script: {instanceID: 14198}
     - Class: 114
-      Script: {instanceID: 14276}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14296}
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14298}
+    - Class: 114
+      Script: {instanceID: 14322}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -258,6 +274,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -286,7 +308,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 9efa1600be896c8e98cdca3b0b78ced8
+      Hash: c12db71e751a2de93a4f9e064c459ae8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Settings
@@ -466,6 +488,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 8b0d372e466fa8d6e0dc07b42cde42f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetVolume
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -496,7 +524,7 @@ ScriptsOnlyBuild:
     className: CameraShake
   - hash:
       serializedVersion: 2
-      Hash: 9adff4f52241420c7cf7e01bcf4fc4cf
+      Hash: a77b7f22304ac1612ac3ecbd767c4f9d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OtherSettings

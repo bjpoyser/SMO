@@ -106,6 +106,7 @@ public class RocketController : MonoBehaviour
     public void GyroscopeControl()
     {
         MoveRocket(Input.acceleration.x, 15f);
+        //MoveRocket(Input.GetAxis("Horizontal"), 7f);
     }
 
     //Movimiento por Paneles
