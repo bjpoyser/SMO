@@ -6,7 +6,7 @@ public class RocketSelection : MonoBehaviour
     private const string rocketPrefs = "rocket";
     private const string selectTxtPrefs = "selectTxt";
 
-    private const string defRocket = "GREEN ALPHA";
+    private const string defRocket = "ALPHA";
 
     private int _rocketIndex;
 
@@ -114,7 +114,7 @@ public class RocketSelection : MonoBehaviour
 
     public void SelectRocket()
     {
-        if (PlayerPrefs.GetInt(_rocket.name) == 0 || _rocket.name == "GreenRocket") { 
+        if (PlayerPrefs.GetInt(_rocket.name) == 0 || _rocket.name == defRocket) { 
             if (shopSystemScript.SubstractCoinsFromTotal(_price))
             {
                 PlayerPrefs.SetInt(_rocket.name, 1);

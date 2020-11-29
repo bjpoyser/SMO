@@ -71,10 +71,10 @@ public class OtherSettings : MonoBehaviour
 
     private void InitAudio()
     {
-        masterSlider.value = PlayerPrefs.GetFloat(masterVol) == 0f ? 1 : PlayerPrefs.GetFloat(masterVol);
-        musicSlider.value = PlayerPrefs.GetFloat(musicVol) == 0f ? 1 : PlayerPrefs.GetFloat(musicVol);
-        sfxSlider.value = PlayerPrefs.GetFloat(sfxVol) == 0f ? 1 : PlayerPrefs.GetFloat(sfxVol);
-        settingsSlider.value = PlayerPrefs.GetFloat(settingsVol) == 0f ? 1 : PlayerPrefs.GetFloat(settingsVol);
+        masterSlider.value = PlayerPrefs.GetFloat(masterVol);
+        musicSlider.value = PlayerPrefs.GetFloat(musicVol);
+        sfxSlider.value = PlayerPrefs.GetFloat(sfxVol);
+        settingsSlider.value = PlayerPrefs.GetFloat(settingsVol);
     }
 
     private void InitLanguage()

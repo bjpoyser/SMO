@@ -148,7 +148,15 @@ public class SkyesEngine : MonoBehaviour
             obstacleIndex = 21;
         if (altitude > 30000)
             obstacleIndex = 22;
-        if (altitude > 31000)
+        if (altitude > 31000 && altitude < 31200)
+        {
+            if(PlayerPrefs.GetInt(catNamePref) == 0)
+            {
+                gameAni.SetTrigger("unlocked");
+                //PlayerPrefs.SetInt(catNamePref, 1);
+            }
+        }
+        if (altitude > 32000)
             obstacleIndex = 23;
     }
 

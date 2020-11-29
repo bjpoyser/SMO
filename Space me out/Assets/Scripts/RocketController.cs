@@ -79,7 +79,7 @@ public class RocketController : MonoBehaviour
             case 1:
             case 3:
                 if (_isPressed) 
-                    MoveRocket(_directionButton, 5f);
+                    MoveRocket(_directionButton, 8f);
                 else
                     MoveRocket(0, 0); 
                 break;
@@ -106,7 +106,7 @@ public class RocketController : MonoBehaviour
     public void GyroscopeControl()
     {
         MoveRocket(Input.acceleration.x, 15f);
-        //MoveRocket(Input.GetAxis("Horizontal"), 7f);
+        MoveRocket(Input.GetAxis("Horizontal"), 8f);
     }
 
     //Movimiento por Paneles

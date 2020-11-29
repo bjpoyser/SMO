@@ -25,6 +25,9 @@ public class Spawner : MonoBehaviour
     private float _speed;
     private int _minSpawnSelection;
 
+    private const float _ultraLowFQ = 10f, _lowFQ = 5.5f, _mediumFQ = 3f, _highFQ = 1.5f, _madFQ = 0.8f;
+    private const float _reallySlow = 5f, _slow = 6f, _normal = 7.5f, _fast = 9f, _reallyFast = 10f, _imposible = 11f;
+
     void Start()
     {
         gameControllerGO = GameObject.Find("GameController");
@@ -91,8 +94,8 @@ public class Spawner : MonoBehaviour
         switch (skyesEngineScript.obstacleIndex)
         {
             case 1:
-                _speed = 5;
-                spawnTime = 6;
+                _speed = _reallySlow;
+                spawnTime = _ultraLowFQ;
                 _minSpawnSelection = 0;
                 _maxSpawnSelection = 2;
                 //Only aircraft
@@ -101,52 +104,51 @@ public class Spawner : MonoBehaviour
                 break;
             case 2:
                 //aircraft and helicopter
-                _speed = 6;
-                spawnTime = 4;
+                spawnTime = _lowFQ;
                 _maxObstacleSelection = 2;
                 break;
             case 3:
-                _speed = 7.5f;
-                spawnTime = 2;
+                _speed = _slow;
+                spawnTime = _mediumFQ;
                 //helicopter and heat ballon
                 _minObstacleSelection = 1;
                 _maxObstacleSelection = 3;
                 break;
             case 4:
-                _speed = 10;
-                spawnTime = 4;
+                _speed = _normal;
+                spawnTime = _lowFQ;
                 //Only Plane
                 _minObstacleSelection = 3;
                 _maxObstacleSelection = 4;
                 break;
             case 5:
             case 6:
-                _speed = 9;
-                spawnTime = 3;
+                _speed = _fast;
+                spawnTime = _mediumFQ;
                 _maxSpawnSelection = 4;
                 //Only meteorite
                 _minObstacleSelection = 4;
                 _maxObstacleSelection = 5;
                 break;
             case 7:
-                spawnTime = 2;
+                _speed = _normal;
+                spawnTime = _highFQ;
                 //meteorite and asteroid
                 _maxObstacleSelection = 6;
                 break;
             case 8:
-                _speed = 10;
+                _speed = _fast;
                 break;
             case 9:
-                _speed = 11;
-                spawnTime = 1f;
+                _speed = _reallyFast;
+                spawnTime = _madFQ;
                 break;
             case 10:
-                _speed = 9.5f;
-                spawnTime = 0.8f;
+                _speed = _normal;
                 break;
             case 11:
-                spawnTime = 3f;
-                _speed = 7f;
+                spawnTime = _mediumFQ;
+                _speed = _slow;
                 _minSpawnSelection = 2;
                 _maxSpawnSelection = 4;
                 //Planets
@@ -158,8 +160,8 @@ public class Spawner : MonoBehaviour
                 _maxObstacleSelection = 6;
                 break;
             case 13:
-                spawnTime = 0.8f;
-                _speed = 10f;
+                spawnTime = _madFQ;
+                _speed = _fast;
                 _minSpawnSelection = 0;
                 _maxSpawnSelection = 4;
                 //meteorite and asteroid
@@ -167,34 +169,34 @@ public class Spawner : MonoBehaviour
                 _maxObstacleSelection = 6;
                 break;
             case 14:
-                spawnTime = 8f;
+                spawnTime = _ultraLowFQ;
                 break;
             case 15:
-                _speed = 12;
-                spawnTime = 0.8f;
+                _speed = _reallyFast;
+                spawnTime = _madFQ;
                 break;
             case 18:
-                _speed = 10;
-                spawnTime = 1.2f;
+                _speed = _fast;
+                spawnTime = _highFQ;
                 break;
             case 19:
-                _speed = 11f;
-                spawnTime = 1f;
+                _speed = _reallyFast;
+                spawnTime = _madFQ;
                 break;
             case 20:
-                _speed = 8f;
-                spawnTime = 1f;
+                _speed = _normal;
+                spawnTime = _highFQ;
                 break;
             case 21:
-                _speed = 13f;
-                spawnTime = 0.8f;
+                _speed = _imposible;
+                spawnTime = _madFQ;
                 break;
             case 22:
-                spawnTime = 8f;
+                spawnTime = _ultraLowFQ;
                 break;
             case 23:
-                _speed = 14f;
-                spawnTime = 0.7f;
+                _speed = _imposible + 2;
+                spawnTime = _madFQ;
                 break;
         }
     }
